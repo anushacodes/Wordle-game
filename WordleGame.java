@@ -12,10 +12,10 @@ import java.nio.file.Paths;
 import java.util.Scanner;
 
 
-public class WordleGame extends JFrame {	
-
+public class WordleGame extends JFrame {
+	
 	private JButton result;            // guess button 
-    private JLabel scoreLabel;         // keep track of score (chances)
+   	private JLabel scoreLabel;         // keep track of score (chances)
     private JTextField wordField;    // wordle word/textbox
 	private JTextField[][] slots;        // each letter of the word is a slot, there are 5 word slots
     private int currentRow = 0;       // to keep track of word row
@@ -48,7 +48,7 @@ public class WordleGame extends JFrame {
 
 	private void ListofWords() {
 			
-	    try (Scanner fileScanner = new Scanner (Paths.get("/Users/anusha/D2L.ai/WordleGame/src/dictionary.txt"))) {
+	    try (Scanner fileScanner = new Scanner (Paths.get("src/dictionary.txt"))) {
 	    	while (fileScanner.hasNextLine()) {
 	    		
 	    		String word = fileScanner.nextLine();
@@ -311,7 +311,7 @@ public class WordleGame extends JFrame {
         }
 
         // writing scores to scores.txt file in the format (name, scores)
-        try (FileWriter scoreWriter = new FileWriter("/Users/anusha/D2L.ai/WordleGame/src/scores.txt")) {
+        try (FileWriter scoreWriter = new FileWriter("src/scores.txt")) {
             for (int i = 0; i < playerNames.size(); i++) {
                 scoreWriter.write(playerNames.get(i) + "," + playerScores.get(i));
                 scoreWriter.write("\n");
