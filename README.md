@@ -2,10 +2,7 @@
 
 A desktop implementation of the popular word-guessing game Wordle, built using Java Swing.
 
-
-
-
-https://github.com/user-attachments/assets/0f28c5b8-7c93-4b87-9a01-07586ac9ef5a
+![gameplay](https://github.com/user-attachments/assets/fcb5e2a2-379d-4e3d-bc7b-0bc967a066a1)
 
 
 ## Description
